@@ -37,3 +37,7 @@ Nous évaluerons la pertinence de cette méthode sur la base d'une comparaison e
 Nous prévoyons de visualiser les données à l'aide l'outil QGIS et de la librairie géopandas en complément des libraires usuelles Python et celles qui nous sembleront pertinentes au moment de la programmation.
 
 Afin de récupérer les données en continu sans avoir à laisser tourner nos ordinateurs, nous utiliserons un serveur distant et nous établirons la structure de transfert des données lors du projet comme indiqué sur l'échéancier.
+
+## Idées à poursuivre
+Nombre de stations sans utilisateurs X% du temps. 
+Coéfficient de Gini dans une zone. 
