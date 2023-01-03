@@ -13,6 +13,7 @@ from controler.lib import *
 from view.Heat_View import display_heat
 from view.Normal_View import display_normal
 from view.Iris_View import display_Iris
+from view.Evolution_Iris_View import display_evolution_Iris
 
 api = Middleware()
 
@@ -22,11 +23,12 @@ statusStations = api.status_stations
 
 stations = merge_StatusInfos(statusStations,infoStations)
 
-print(stations.head())
+#print(stations.head())
 
 display_normal(stations)
 display_heat(stations)
 display_Iris(stations)
+display_evolution_Iris(stations)
 
 
 
