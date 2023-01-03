@@ -6,7 +6,9 @@ def get_Iris():
 
 def merge_StatusInfos(statusStations, infoStations):
     """Fusionne les tableaux statusStations et infoStations en un seul"""
-    statusStationsJoined = statusStations.join(infoStations)
+    print(statusStations.head())
+    print(infoStations.head())
+    statusStationsJoined = statusStations.merge(infoStations, how='right')
     statusStationsJoined.reset_index(inplace=True)
     return statusStationsJoined
     

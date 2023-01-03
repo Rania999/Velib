@@ -43,8 +43,8 @@ class Middleware :
         statusStations.pop('num_bikes_available_types' )
 
         # Indexe les tableaux
-        statusStations.set_index("station_id", inplace=True)
-        infoStations.set_index("station_id", inplace=True)
+        #statusStations.set_index("station_id", inplace=True)
+        #infoStations.set_index("station_id", inplace=True)
 
         self.info_stations = infoStations
         self.status_stations = statusStations
