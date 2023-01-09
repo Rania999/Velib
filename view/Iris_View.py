@@ -11,7 +11,7 @@ def display_Iris(stations):
     iris = get_Iris()
     gdf = gpd.GeoDataFrame(stations, geometry=gpd.points_from_xy(stations.lon, stations.lat))
     gdf.set_crs(epsg=4326, inplace=True) # definition de la transformee en WSG 84
-    print(iris.head())
+    #print(iris.head())
     data_merged = gpd.sjoin(gdf, iris, how="inner", op='within')
     data_merged = data_merged.groupby('CODE_IRIS')['num_bikes_available', 'num_docks_available'].agg('sum')
     data_merged.reset_index(inplace=True)
